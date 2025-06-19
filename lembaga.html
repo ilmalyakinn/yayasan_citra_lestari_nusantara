@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lembaga - Yayasan Citra Lestari Nusantara</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div
+          class="navbar-logo"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img src="assets/logo.png" alt="Logo" class="logo-img" />
+          <span>YAYASAN CITRA LESTARI NUSANTARA</span>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lembaga.html" class="active">Lembaga</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="lembaga" id="lembaga">
+      <h2>Lembaga Kami</h2>
+      <div class="lembaga-tabs">
+        <button
+          class="tab-btn active"
+          id="tab-formal"
+          onclick="showLembaga('formal')"
+        >
+          Pendidikan Formal
+        </button>
+        <button
+          class="tab-btn"
+          id="tab-nonformal"
+          onclick="showLembaga('nonformal')"
+        >
+          Pendidikan Non Formal
+        </button>
+      </div>
+      <div class="lembaga-tab-content" id="content-formal">
+        <div class="lembaga-list">
+          <button class="lembaga-item-btn active" onclick="showSekolah('mts')">
+            MTs Citra Lestari
+          </button>
+          <button class="lembaga-item-btn" onclick="showSekolah('ma')">
+            MA Al-Ikhsan Arjasari
+          </button>
+        </div>
+        <div class="lembaga-detail" id="detail-mts">
+          <h3>MTs Citra Lestari</h3>
+          <div class="lembaga-slideshow" id="slideshow-mts"></div>
+          <p>
+            Madrasah Tsanawiyah dengan kurikulum unggulan, fasilitas lengkap,
+            dan prestasi akademik yang membanggakan. Fokus pada pembentukan
+            karakter dan pengembangan potensi siswa.
+          </p>
+          <h4>Mengapa Memilih Kami?</h4>
+          <ul>
+            <li>Kurikulum modern dan islami</li>
+            <li>Ekstrakurikuler beragam</li>
+            <li>Lingkungan belajar nyaman</li>
+            <li>Prestasi akademik & non-akademik</li>
+          </ul>
+          <h4>Kepala Madrasah</h4>
+          <p><b>Rafiudin Taufik, S.Sg.,S.Pd</b></p>
+          <h4>Email</h4>
+          <p>
+            <a href="mailto:mtsalikhsaarjasari@gmail.com"
+              >mtsalikhsaarjasari@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="lembaga-detail" id="detail-ma" style="display: none">
+          <h3>MA Al-Ikhsan Arjasari</h3>
+          <div class="lembaga-slideshow" id="slideshow-ma"></div>
+          <p>
+            Madrasah Aliyah yang mempersiapkan siswa untuk pendidikan tinggi dan
+            dunia kerja, dengan pembinaan karakter dan keagamaan yang kuat.
+          </p>
+          <h4>Mengapa Memilih Kami?</h4>
+          <ul>
+            <li>Persiapan masuk perguruan tinggi</li>
+            <li>Pembinaan karakter islami</li>
+            <li>Fasilitas lengkap</li>
+          </ul>
+          <h4>Kepala Madrasah</h4>
+          <p><b>Krisna Kosasih, S.PD</b></p>
+          <h4>Email</h4>
+          <p><a href="mailto:maalikhsan@gmail.com">maalikhsan@gmail.com</a></p>
+          <h4>Telpon</h4>
+          <p><a href="tel:083164851725">083164851725</a></p>
+        </div>
+      </div>
+      <div
+        class="lembaga-tab-content"
+        id="content-nonformal"
+        style="display: none"
+      >
+        <div class="lembaga-list">
+          <button
+            class="lembaga-item-btn active"
+            onclick="showNonformal('kober')"
+          >
+            Kober Citra Lestari
+          </button>
+          <button class="lembaga-item-btn" onclick="showNonformal('lkp')">
+            LKP Lestari
+          </button>
+          <button class="lembaga-item-btn" onclick="showNonformal('pkbm')">
+            PKBM Citra Lestari
+          </button>
+        </div>
+        <div class="lembaga-detail" id="detail-kober">
+          <h3>Kober Citra Lestari</h3>
+          <div class="lembaga-slideshow" id="slideshow-kober"></div>
+          <h4>Visi</h4>
+          <p>
+            <em
+              >"Meningkatkan Kualitas Pendidikan Anak Usia Dini Guna Mewujudkan
+              Anak yang Sehat, Cerdas, Ceria dan berakhlaqul karimah"</em
+            >
+          </p>
+          <h4>Misi</h4>
+          <ul>
+            <li>
+              Meningkatkan mutu pendidikan yang berlandaskan pada nilai moral
+              dan agama
+            </li>
+            <li>Menanamkan rasa tanggung jawab dan kasih sayang</li>
+            <li>Menanamkan kedisiplinan sejak dini</li>
+            <li>Menumbuhkan sifat tenggang rasa</li>
+            <li>Menanamkan kemandirian sejak dini</li>
+          </ul>
+          <h4>Kepala Kober</h4>
+          <p><b>Nurhasanah</b></p>
+        </div>
+        <div class="lembaga-detail" id="detail-lkp" style="display: none">
+          <h3>LKP Lestari</h3>
+          <div class="lembaga-slideshow" id="slideshow-lpk"></div>
+          <p>
+            <b>Alamat:</b> Kp. Cimentrik RT 02 RW 07 Desa Baros Kecamatan
+            Arjasari Kabupaten Bandung
+          </p>
+          <p><b>Pimpinan:</b> Firmansyah, S.Sn</p>
+          <p><b>Izin Operasional:</b> 421.10/3788-Disdik/2020</p>
+          <h4>Visi</h4>
+          <p>
+            <em
+              >"Mewujudkan LKP Lestari sebagai sebuah lembaga pendidikan dan
+              pelatihan yang unggul, berkualitas dan mandiri yang mampu
+              memotivasi siswa untuk bersaing dengan lulusan yang dibutuhkan
+              oleh pasar kerja."</em
+            >
+          </p>
+          <h4>Misi</h4>
+          <ul>
+            <li>
+              Mewujudkan pelayanan terhadap masyarakat di bidang kursus
+              komputer.
+            </li>
+            <li>Menjalankan sistem dan tata kelola LKP yang profesional.</li>
+            <li>
+              Membangun jaringan kemitraan dengan DUDI dan asosiasi profesi.
+            </li>
+            <li>
+              Melaksanakan proses pembelajaran yang interaktif dan selalu
+              mengikuti perkembangan.
+            </li>
+            <li>Menjalankan sistem keuangan yang transparan dan akuntabel.</li>
+            <li>
+              Melaksanakan program-program kursus yang relevan sesuai dengan
+              kebutuhan pasar.
+            </li>
+            <li>
+              Menggunakan sumber daya manusia yang kompeten dalam pengelolaan.
+            </li>
+          </ul>
+          <h4>Tujuan</h4>
+          <p>
+            <em
+              >"Terwujudnya LKP Lestari sebagai pusat pendidikan dan pelatihan
+              bidang komputer yang memenuhi standar nasional dan mampu
+              menghasilkan lulusan yang siap memasuki pasar kerja."</em
+            >
+          </p>
+        </div>
+        <div class="lembaga-detail" id="detail-pkbm" style="display: none">
+          <h3>PKBM Citra Lestari</h3>
+          <div class="lembaga-slideshow" id="slideshow-pkmb"></div>
+          <div class="pkbm-info" style="margin-bottom: 18px">
+            <b style="color: #0a7a5a"
+              >PUSAT KEGIATAN BELAJAR MASYARAKAT (PKBM)<br />
+              CITRA LESTARI</b
+            ><br />
+            SK. MENDIKBUD NOMOR: 511/B6.1/LL/2015<br />
+            NILEM: 321110402023<br />
+            IZIN OPERASIONAL Nomor: 421.10/3274-Dikbud/2019<br />
+            NPSN: 69932470<br />
+            <br />
+            <b style="color: #0a7a5a">Sekretariat:</b><br />
+            Kp. Cimentrik RT.02 RW.01 Desa Baros Kec. Arjasari Kab. Bandung<br />
+            Tlp: 085721987875<br />
+            Email: pkbmcitralestari@gmail.com
+          </div>
+          <h4>Visi</h4>
+          <p>
+            <em>Terwujudnya masyarakat yang terampil, mandiri dan sejahtera</em>
+          </p>
+          <h4>Misi</h4>
+          <ul>
+            <li>
+              Mewujudkan kemandirian, kesejahteraan ekonomi pengurus dan
+              masyarakat
+            </li>
+            <li>
+              Mengembangkan potensi sumber daya manusia dan sumber daya alam
+            </li>
+          </ul>
+          <h4>Tujuan</h4>
+          <ul>
+            <li>
+              Mensukseskan Wajar Dikdas yang telah diprogramkan pemerintah
+            </li>
+            <li>
+              Mencerdaskan masyarakat di bidang pendidikan dan keterampilan
+            </li>
+            <li>
+              Membuka peluang pendidikan keterampilan dan vokasional bagi
+              masyarakat serta membimbing hingga memiliki kecakapan hidup yang
+              diharapkan nantinya berfungsi untuk memperoleh akses pekerjaan
+              atau usaha sendiri, sehingga bisa mandiri dalam kehidupannya
+            </li>
+          </ul>
+          <p><b>Ketua PKBM CITRA LESTARI</b></p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-sosmed">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Logo" class="logo-img" />
+            <span>Yayasan Citra Lestari Nusantara</span>
+          </div>
+          <p style="margin: 0">
+            Yayasan Citra Lestari Nusantara berdiri sejak 2016, berfokus pada
+            pendidikan, pelatihan, sosial, keagamaan, dan pemberdayaan
+            masyarakat berbasis IMTAQ dan IPTEK.
+          </p>
+        </div>
+        <div class="footer-col contact-links">
+          <h4>CONTACT</h4>
+          <div class="contact-grid">
+            <a href="https://wa.me/6283188547614" target="_blank">WhatsApp</a>
+            <a href="mailto:info@yayasancitralestari.or.id" target="_blank"
+              >Email</a
+            >
+            <a
+              href="https://www.instagram.com/yayasancitralestarinusantara/"
+              target="_blank"
+              >Instagram</a
+            >
+            <a
+              href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40mts_alikhsanarjasari%3F_t%3DZS-8td0jCAZNlB%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaeLEUqtnNSaZPaqwLmFv4iBLor81syfWqND_rbDk34C7ge3CR-IV5m6fYxLDw_aem_oLHv8WywOtM9JBPFcQtEWA&e=AT0vW67LaZPTDJw7IDPzhEADFv6xxtdf41XobU3tzTCFW6PQ6HmsLNJ7q0fUZOOEc9dB8VVkJIWTr1U9trOa-JDT-r9kJC7oqtXJOtU"
+              target="_blank"
+              >TikTok</a
+            >
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>ADDRESS</h4>
+          <a href="#" target="_blank"
+            >Kp. Cimentrik RT 02 RW 07 Desa Baros, Kec. Arjasari, Kab.
+            Bandung</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2024 Yayasan Citra Lestari Nusantara</p>
+        </div>
+        <div class="footer-sosmed-icons">
+          <a
+            href="https://www.instagram.com/yayasancitralestarinusantara/"
+            target="_blank"
+            title="Instagram"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40mts_alikhsanarjasari%3F_t%3DZS-8td0jCAZNlB%26_r%3D1%26fbclid%3DPAZXh0bgNhZW0CMTEAAaeLEUqtnNSaZPaqwLmFv4iBLor81syfWqND_rbDk34C7ge3CR-IV5m6fYxLDw_aem_oLHv8WywOtM9JBPFcQtEWA&e=AT0vW67LaZPTDJw7IDPzhEADFv6xxtdf41XobU3tzTCFW6PQ6HmsLNJ7q0fUZOOEc9dB8VVkJIWTr1U9trOa-JDT-r9kJC7oqtXJOtU"
+            target="_blank"
+            title="TikTok"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
+              alt="TikTok"
+            />
+          </a>
+          <a href="https://facebook.com" target="_blank" title="Facebook">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a
+            href="https://wa.me/6283188547614"
+            target="_blank"
+            title="WhatsApp"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+              alt="WhatsApp"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <a
+      href="https://wa.me/6283188547614"
+      class="wa-float"
+      target="_blank"
+      title="Hubungi WhatsApp"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+    <script src="lembaga.js"></script>
+    <script>
+      const hamburger = document.getElementById("hamburgerBtn");
+      const navMenu = document.querySelector(".navbar-menu");
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

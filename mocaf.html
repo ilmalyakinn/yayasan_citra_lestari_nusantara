@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk Mocaf - Yayasan Citra Lestari Nusantara</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div
+          class="navbar-logo"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img src="assets/logo.png" alt="Logo" class="logo-img" />
+          <span>YAYASAN CITRA LESTARI NUSANTARA</span>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lembaga.html">Lembaga</a></li>
+          <li><a href="produk.html" class="active">Produk</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="berita.html">Berita</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="produk" id="produk-detail">
+      <h2>Detail Produk: Mocaf</h2>
+      <div class="produk-container" style="justify-content: center">
+        <div class="produk-card" style="max-width: 420px">
+          <img src="assets/produk/mocaf.jpeg" alt="Mocaf" class="produk-img" />
+          <h3>Mocaf</h3>
+          <div class="produk-badges">
+            <span class="badge badge-bahan">Singkong</span>
+            <span class="badge badge-jenis">Tepung</span>
+          </div>
+          <p>
+            Mocaf (Modified Cassava Flour) adalah tepung yang dihasilkan dari
+            singkong melalui proses fermentasi khusus. Mocaf memiliki tekstur
+            halus, warna putih bersih, dan bebas gluten sehingga cocok untuk
+            berbagai olahan makanan sehat seperti roti, kue, mie, dan camilan.
+            Mocaf juga dapat menjadi alternatif tepung terigu bagi penderita
+            intoleransi gluten.
+          </p>
+          <ul
+            style="
+              color: #444;
+              text-align: left;
+              font-size: 1em;
+              margin: 1em 0 0 0.5em;
+            "
+          >
+            <li>Bahan baku: Singkong pilihan lokal</li>
+            <li>Bebas gluten, cocok untuk diet sehat</li>
+            <li>Dapat digunakan untuk aneka olahan makanan</li>
+            <li>Lebih ekonomis dan mendukung petani lokal</li>
+          </ul>
+          <a
+            href="produk.html"
+            class="btn btn-detail"
+            style="margin-top: 1.5rem"
+            >Kembali ke Produk</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer-sosmed">
+      <div class="footer-main">
+        <div class="footer-col">
+          <h4>ABOUT</h4>
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Logo" class="logo-img" />
+            <span>Yayasan Citra Lestari Nusantara</span>
+          </div>
+          <p style="margin: 0">
+            Yayasan Citra Lestari Nusantara berdiri sejak 2016, berfokus pada
+            pendidikan, pelatihan, sosial, keagamaan, dan pemberdayaan
+            masyarakat berbasis IMTAQ dan IPTEK.
+          </p>
+        </div>
+        <div class="footer-col contact-links">
+          <h4>CONTACT</h4>
+          <div class="contact-grid">
+            <a href="https://wa.me/" target="_blank">WhatsApp</a>
+            <a href="mailto:info@yayasancitralestari.or.id" target="_blank"
+              >Email</a
+            >
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>ADDRESS</h4>
+          <a href="#" target="_blank"
+            >Kp. Cimentrik RT 02 RW 07 Desa Baros, Kec. Arjasari, Kab.
+            Bandung</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2024 Yayasan Citra Lestari Nusantara</p>
+        </div>
+        <div class="footer-sosmed-icons">
+          <a href="https://instagram.com" target="_blank" title="Instagram"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+              alt="Instagram"
+          /></a>
+          <a href="https://tiktok.com" target="_blank" title="TikTok"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
+              alt="TikTok"
+          /></a>
+          <a href="https://facebook.com" target="_blank" title="Facebook"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+              alt="Facebook"
+          /></a>
+          <a href="https://wa.me/" target="_blank" title="WhatsApp"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
+              alt="WhatsApp"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("hamburgerBtn");
+      const navMenu = document.querySelector(".navbar-menu");
+      hamburger.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
